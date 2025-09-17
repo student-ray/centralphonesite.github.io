@@ -1,0 +1,36 @@
+.final {
+    text-align: center;
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 20px;
+    margin: 20px auto; /* Margem automática para centralizar */
+    max-width: 550px; 
+    background-color: rgb(255, 249, 249);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border:2px solid black;
+    border-radius: 2rem 2rem; 
+    color:rgb(14, 14, 14); 
+    border-color: rgb(7, 24, 49);
+    font-size: large; 
+    width: 745px;
+}
+
+.return{
+    text-decoration: none;
+    font-weight: bolder;
+    padding-left: 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 780px){
+    .final{
+        width: auto;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/novaConta.css">
+    <link rel="stylesheet" href="JavaScript/Senha.js">
+    
+
+    <script src="JavaScript/Senha.js"></script>
+
+    <title>Nova Conta</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a class="icons" href="index.html"><ion-icon name="home"></ion-icon></a>
+                </li>
+                <li>
+                    <a class="icons" href="novaConta.html"><ion-icon name="person"></ion-icon></a>
+                </li>
+                <li>
+                    <a class="icons" href="sobre.html"><ion-icon name="add-circle"></ion-icon></a>
+                </li>
+                <li>
+                    <a class="icons" href="faq.html"><ion-icon name="help-circle"></ion-icon></a>
+                </li>
+                <li>
+                    <a class="icons" href="contato.html"><ion-icon name="call"></ion-icon> </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 class="centralphone">CENTRAL PHONE</h1>
+
+    <div id="conta-geral">
+        <h2 style="text-align: center;">Crie uma conta agora</h2>
+        <h3 style="text-align: center;">Já tem uma conta? Então faça <a href="login.html">LOGIN</a></h3>
+    </div>
+
+    <main>
+     <form action="final-conta.html" method="post" id="NovaConta">
+        
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="Digite seu nome" size="35" required>
+        <br>
+            <label for="e-mail">E-mail: </label>
+            <input type="email" name="email" placeholder="Digite seu E-mail" size="30" maxlength="35" required> 
+        <br>
+            <label for="senha">Senha: </label>
+            <input type="password" placeholder="Crie uma senha" maxlength="8" id="password" required>
+        <br>
+            <label for="senha">Confirme a senha: </label>
+            <input type="password" placeholder="Confirmação da senha" maxlength="8" id="ConfirmPassword" required>
+            <legend>Digite até 6 à 8 caracteres </legend>
+        <br>
+        <span class="error" id="error-message"></span>
+
+        <button type="submit" onclick="return ValidarSenha()">Enviar</button>
+     </form>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

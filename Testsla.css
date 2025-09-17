@@ -1,0 +1,97 @@
+/* Reset de margin e padding */
+* {
+    margin: 10px ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para a seção de produtos */
+.produtos {
+    padding: 20px;
+    text-align: center;
+}
+
+.produtos h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Estilos da grid de produtos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 colunas */
+    gap: 20px; /* Espaçamento entre os produtos */
+    max-width: 2000px;
+    margin: 0 auto; /* Centraliza a grid */
+}
+
+/* Estilos para cada cartão de produto */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover no cartão */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a imagem do produto */
+.product-image img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilos para as informações do produto */
+.product-info {
+    padding: 15px;
+}
+
+/* Nome do produto */
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Preço do produto */
+.product-price {
+    font-size: 16px;
+    color: #f57224; /* Cor laranja para o preço */
+    margin-bottom: 10px;
+}
+
+/* Descrição do produto */
+.product-description {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+}
+
+/* Estilo para o link da imagem */
+.product-image a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Adiciona um fundo sutil ao passar o mouse sobre a imagem */
+.product-image a:hover img {
+    opacity: 0.85;
+}
+
+
+

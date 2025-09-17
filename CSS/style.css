@@ -1,0 +1,129 @@
+    /* ESTILIZAÇÃO GERAL */
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 10px;
+        background-color: #ff9719;
+        background-size: cover; /* A imagem cobre todo o elemento */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Impede a repetição da imagem */
+        height: 100vh; /* Define a altura da seção */
+        padding-top: 20px;
+        }
+    
+    /* Cabeçalho */
+    header {
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 20px;
+    }
+
+    /* Navegação */
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+    }
+
+    ion-icon{
+        font-size: 1.9rem;
+    }
+        
+    h1{
+        text-align: center;
+        padding-top: 0.6rem;
+        color:#0a3e86;
+    }
+    
+    .menu a{
+        font-size: larger;
+    }
+    
+    a{
+        font-size: 15px;
+        color: rgb(10, 62, 134);
+        font-size: 25px;
+    }
+    
+    a:hover{
+        text-decoration: none;
+        color: rgb(10, 62, 134, 0.9);
+    }
+    
+    #contageral{
+        font-size: 20px;
+    }
+    
+    form{
+        font-size: larger;
+    }
+    footer {
+        background-color: rgba(255, 255, 255, 0); /* Cor de fundo do footer */
+        color: #0a3e86; /* Cor do texto */
+        text-align: center; /* Centraliza o texto */
+        padding: 1.5rem; /* Espaçamento interno */
+        position: relative; /* Pode ser 'fixed' se quiser que fique sempre visível */
+        bottom: 0;
+        width: 100%; /* Largura total */
+        margin-top: 337px;
+    }
+
+    @media(max-width: 780px){
+        .tittle{
+            font-size: 1.5rem;
+        }
+        
+        ul li .ancora{
+            font-size: 1.4rem;
+            padding: 0.5rem;
+            width: auto;
+        }
+
+        ul li a ion-icon{
+            font-size: 1.4rem;
+        }
+    }
+
+    html{
+        overflow-x: hidden; /*OCULTAR QUALQUER CONTEÚDO, QUE ESTEJA NA HORIZONTAL, QUE ULTRAPASSE A ÁREA VISÍVEL DO MEU ELEMENTO */
+        
+        scroll-padding-top: 9rem; /* ADICIONA UM ESPAÇO EXTRA NO TOPO DA ÁREA VISÍVEL QUANDO ROLAR PARA ALGUM ALVO, POR EXEMPLO: QUANDO CLICAR EM UM LINK DE ÂNCORA QUEREMOS QUE ELE SUBA DEIXANDO ESSE ESPAÇAMENTO DE 9rem */
+
+        scroll-behavior: smooth;/* COMPORTAMENTO SUAVE NA ROLAGEM DA PÁGINA QUANDO UM LINK INTERNO É CLICADO */
+    }
+
+/*CONFIGURAÇÃO DA BARRA DE ROLAGEM*/
+/* PARA CONFIGURAR A BARRA DE ROLAGEM, UTILIZAREMOS ALGUNS PSEUDOS SELETORES*/
+
+/*DEFINIÇÃO DA LARGURA DA BARRA DE ROLAGEM */
+    html::-webkit-scrollbar{
+        width: 0.8rem;
+    }
+
+/*ADIÇÃO DA TRANSPARÊNCIA NA BARRA DE ROLAGEM*/
+    html::-webkit-scrollbar-track{
+        background: transparent;
+    }
+
+/*APARÊNCIA DA BARRA DE ROLAGEM*/
+    html::-webkit-scrollbar-thumb{
+        background: #fff;
+        border-radius: 5rem;
+    }

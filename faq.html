@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/faq.css">
+
+    <script src="JavaScript/FAQ.js"></script>
+
+    <title>Perguntas frequentes</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a class="icons" href="index.html"><ion-icon name="home"></ion-icon></a>
+            </li>
+            <li>
+              <a class="icons" href="novaConta.html"><ion-icon name="person"></ion-icon></a>
+            </li>
+            <li>
+              <a class="icons" href="sobre.html"><ion-icon name="add-circle"></ion-icon></a>
+            </li>
+            <li>
+              <a class="icons" href="faq.html"><ion-icon name="help-circle"></ion-icon></a>
+            </li>
+            <li>
+              <a class="icons" href="contato.html"><ion-icon name="call"></ion-icon> </a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <h1>FAQ</h1>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h2>1. Quais tipos de celulares vocês vendem?</h2>
+            </div>
+            <div class="faq-answer">Oferecemos uma ampla variedade de celulares, incluindo modelos de marcas populares
+                como Apple, Samsung, Motorola, Xiaomi, e mais. Temos tanto aparelhos novos quanto recondicionados.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h2>2. Como funciona o processo de conserto de celulares?</h2>
+            </div>
+            <div class="faq-answer">Você pode trazer seu celular diretamente à nossa loja ou agendar um atendimento
+                online. Nossa equipe avaliará o problema e fornecerá um orçamento sem compromisso antes de realizar
+                qualquer serviço.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h2>3. Quanto tempo leva para consertar um celular?</h2>
+            </div>
+            <div class="faq-answer">O tempo de conserto varia conforme o tipo de serviço. Reparos simples, como troca de
+                tela, podem ser feitos em poucas horas, enquanto problemas mais complexos podem levar até 3 dias. Você
+                será informado do prazo estimado após a avaliação.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h2>4. Vocês oferecem garantia nos consertos?</h2>
+            </div>
+            <div class="faq-answer">Sim! Todos os nossos consertos vêm com uma garantia de 90 dias, cobrindo falhas
+                relacionadas ao serviço realizado. Se houver algum problema, entre em contato conosco.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h2>5.Como posso saber se meu celular precisa de conserto?</h2>
+            </div>
+            <div class="faq-answer">Se você estiver enfrentando problemas como a tela quebrada, o aparelho não liga,
+                superaquecimento, ou problemas de desempenho, é recomendável trazer seu celular para uma avaliação.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h2>6. Como posso entrar em contato para mais informações?</h2>
+            </div>
+            <div class="faq-answer">Você pode entrar em contato conosco pelo Whatsapp, e-mail , ou visitar nossa loja
+                localizada em R. João Antônio Afonso, nº 111 - Santa Inês, Vila Velha - ES. Também estamos disponíveis
+                nas redes sociais!</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const faqItem = item.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Central Phone. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

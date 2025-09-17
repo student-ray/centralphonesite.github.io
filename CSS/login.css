@@ -1,0 +1,67 @@
+/* Estilo da div conta-geral */
+.conta-geral {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    max-width: 645px; 
+    margin: 20px auto; /* Para centralizar na página */
+    padding: 20px; 
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; /* Espaçamento entre os campos */
+}
+
+/* Estilo dos rótulos */
+label {
+    margin-bottom: 5px; /* Espaçamento entre o rótulo e o campo */
+    font-weight: bold; 
+    text-align: center; 
+}
+
+/* Estilos de input */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 8px; /* Espaçamento interno */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width: 300px; /* Ajusta a largura da barra de resposta */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+    text-align: center; /* Centraliza o texto dentro do input */
+}
+/* Estilo do botão */
+button {
+    padding: 10px;
+    background-color: #5c15c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 300px;
+}
+
+/* Estilos ao passar o mouse no botão */
+button:hover {
+    background-color: #38128f;
+}
